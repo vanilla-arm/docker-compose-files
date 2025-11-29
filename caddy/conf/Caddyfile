@@ -1,0 +1,14 @@
+repo2.vanillaos.org {
+    root * /srv/mirror
+    file_server {
+        browse
+    }
+
+    @fallback {
+        path /debian/*
+        not file {
+            try_files {path} {path}/
+        }
+    }
+    redir @fallback http://snapshot.debian.org/archive{uri}
+}
