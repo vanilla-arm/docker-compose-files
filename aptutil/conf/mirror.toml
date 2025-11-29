@@ -1,0 +1,8 @@
+dir = "/srv/mirror"
+max_conns = 20
+
+[mirror.vanilla-testing]
+url = "http://snapshot.debian.org/archive/debian/20251129T023004Z"
+suites = ["sid"]
+sections = ["main", "contrib", "non-free", "non-free-firmware"]
+architectures = ["amd64", "arm64"]

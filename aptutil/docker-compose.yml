@@ -1,0 +1,8 @@
+services:
+  aptutil:
+    image: jacksgt/aptutil:latest
+    container_name: aptutil
+    volumes:
+      - ./conf:/etc/apt:ro
+      - ./mirror:/srv/mirror
+    command: /go-apt-mirror
