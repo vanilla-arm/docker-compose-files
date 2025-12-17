@@ -1,7 +1,7 @@
 dir = "/vos-apt-data/mirrors/debian"
 max_conns = 20
 
-[mirror.vanilla-testing]
+[mirror.20251129T023004Z]
 url = "http://snapshot.debian.org/archive/debian/20251129T023004Z"
 suites = ["sid"]
 sections = ["main", "contrib", "non-free", "non-free-firmware"]
